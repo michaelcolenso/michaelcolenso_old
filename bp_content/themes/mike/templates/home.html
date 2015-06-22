@@ -1,0 +1,54 @@
+{% extends base_layout %}
+
+{% block content %}
+<video autoplay muted poster="" id="bgvid" loop>
+<source src="/{{theme}}/img/oneminute.webm" type="video/webm">
+<source src="/{{theme}}/img/oneminute.mp4" type="video/mp4">
+</video>
+<div id="mike" class="center">
+  <h1 class="huge">michael colenso</h1>
+
+
+</div>
+<div class="ep">
+<svg class="center" width="100%" height="100%" viewBox="0 -30 600 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<path id="path">
+  <animate id='anim1' attributeName="d" from="m50,45 h0" to="m50,45 h1100" dur="10.2s" begin="1.8s" repeatCount="1"/>
+  <animate id='anim2' attributeName="d" from="m50,45 h1100" to="m50,45 h1100" begin="anim1.end"/>
+</path>
+<text id='enthused' font-family="Oswald" fill='white'>
+  <textPath xlink:href="#path"> enthusiastic participant
+  </textPath>
+</text>
+</svg>
+</div>
+
+<div class="social">
+  <span class="fa-stack fa-4x">
+    <a href="http://twitter.com/michaelcolenso">
+    <i class="fa fa-square-o fa-stack-2x"></i>
+    <i class="fa fa-twitter fa-stack-1x"></i>
+    </a>
+  </span>
+  <span class="fa-stack fa-4x">
+    <a href="http://github.com/michaelcolenso">
+    <i class="fa fa-square-o fa-stack-2x"></i>
+    <i class="fa fa-github fa-stack-1x"></i>
+    </a>
+  </span>
+  <span class="fa-stack fa-4x">
+    <a href="http://linkedin.com/in/michaelcolenso">
+    <i class="fa fa-square-o fa-stack-2x"></i>
+    <i class="fa fa-linkedin fa-stack-1x"></i>
+    </a>
+
+  </span>
+  <span class="fa-stack fa-4x">
+    <a href="https://medium.com/@michaelcolenso">
+    <i class="fa fa-square-o fa-stack-2x"></i>
+    <i class="fa fa-medium fa-stack-1x"></i>
+  </a>
+  </span>
+</div>
+
+{% endblock %}
